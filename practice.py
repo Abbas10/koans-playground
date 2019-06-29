@@ -33,3 +33,45 @@ class Dog:
 
 rover = Dog()
 print(rover._Dog__password())
+
+
+# i = 1
+# result = 1
+# while i <= 10:
+#     result = result * i
+#     i += 1
+
+# print(result)
+
+# i = 1
+# result = 1
+# while True:
+#     if i > 10: break
+#     result = result * i
+#     i += 1
+# print(result)
+
+
+# i = 0
+# result = []
+# while i < 10:
+#     i += 1
+#     if (i % 2) == 0: continue
+#     result.append(i)
+# print(result)
+
+round_table = [
+            ("Lancelot", "Blue"),
+            ("Galahad", "I don't know!"),
+            ("Robin", "Blue! I mean Green!"),
+            ("Arthur", "Is that an African Swallow or European Swallow?")
+        ]
+result = []
+for knight, answer in round_table:
+    result.append("Contestant: '" + knight + "'   Answer: '" + answer + "'")
+
+print(result[2])
+highlanders = ['MacLeod', 'Ramirez', 'MacLeod', 'Matunas', 'MacLeod', 'Malcolm', 'MacLeod']
+there_can_only_be_only_one = set(highlanders)
+print(there_can_only_be_only_one)
+print(set())
