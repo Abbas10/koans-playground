@@ -20,58 +20,70 @@
 # a = PracticeClass.method_with_var_args('one')
 # print(a)
 
-class Dog:
-    def name(self):
-        return "Fido"
+# class Dog:
+#     def name(self):
+#         return "Fido"
 
-    def _tail(self):
-        # Prefixing a method with an underscore implies private scope
-        return "wagging"
+#     def _tail(self):
+#         # Prefixing a method with an underscore implies private scope
+#         return "wagging"
 
-    def __password(self):
-        return 'password' # Genius!
+#     def __password(self):
+#         return 'password' # Genius!
 
-rover = Dog()
-print(rover._Dog__password())
-
-
-# i = 1
-# result = 1
-# while i <= 10:
-#     result = result * i
-#     i += 1
-
-# print(result)
-
-# i = 1
-# result = 1
-# while True:
-#     if i > 10: break
-#     result = result * i
-#     i += 1
-# print(result)
+# rover = Dog()
+# print(rover._Dog__password())
 
 
-# i = 0
+# # i = 1
+# # result = 1
+# # while i <= 10:
+# #     result = result * i
+# #     i += 1
+
+# # print(result)
+
+# # i = 1
+# # result = 1
+# # while True:
+# #     if i > 10: break
+# #     result = result * i
+# #     i += 1
+# # print(result)
+
+
+# # i = 0
+# # result = []
+# # while i < 10:
+# #     i += 1
+# #     if (i % 2) == 0: continue
+# #     result.append(i)
+# # print(result)
+
+# round_table = [
+#             ("Lancelot", "Blue"),
+#             ("Galahad", "I don't know!"),
+#             ("Robin", "Blue! I mean Green!"),
+#             ("Arthur", "Is that an African Swallow or European Swallow?")
+#         ]
 # result = []
-# while i < 10:
-#     i += 1
-#     if (i % 2) == 0: continue
-#     result.append(i)
-# print(result)
+# for knight, answer in round_table:
+#     result.append("Contestant: '" + knight + "'   Answer: '" + answer + "'")
 
-round_table = [
-            ("Lancelot", "Blue"),
-            ("Galahad", "I don't know!"),
-            ("Robin", "Blue! I mean Green!"),
-            ("Arthur", "Is that an African Swallow or European Swallow?")
-        ]
-result = []
-for knight, answer in round_table:
-    result.append("Contestant: '" + knight + "'   Answer: '" + answer + "'")
+# print(result[2])
+# highlanders = ['MacLeod', 'Ramirez', 'MacLeod', 'Matunas', 'MacLeod', 'Malcolm', 'MacLeod']
+# there_can_only_be_only_one = set(highlanders)
+# print(there_can_only_be_only_one)
+# print(set())
 
-print(result[2])
-highlanders = ['MacLeod', 'Ramirez', 'MacLeod', 'Matunas', 'MacLeod', 'Malcolm', 'MacLeod']
-there_can_only_be_only_one = set(highlanders)
-print(there_can_only_be_only_one)
-print(set())
+from koans import triangle
+
+print(triangle.triangle(1,2,3))
+it = iter(range(1,6))
+
+total = 0
+
+for num in it:
+    total += num
+
+print(total)
