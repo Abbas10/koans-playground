@@ -26,6 +26,8 @@ class Proxy:
         self._obj = target_object
 
     # WRITE CODE HERE
+    def power(self):
+        pass
 
 # The proxy object should pass the following Koan:
 #
