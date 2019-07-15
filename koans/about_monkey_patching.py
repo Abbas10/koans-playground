@@ -34,9 +34,6 @@ class AboutMonkeyPatching(Koan):
             int.is_even = lambda self: (self % 2) == 0
         except Exception as ex:
             err_msg = ex.args[0]
-            print("*"*50)
-            print(err_msg)
-            print("*"*50)
 
         self.assertRegex(err_msg, "can't set attributes of built-in/extension type 'int'")
 

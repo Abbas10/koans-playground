@@ -30,9 +30,6 @@ class AboutDiceProject(Koan):
 
         dice.roll(5)
         self.assertTrue(isinstance(dice.values, list), "should be a list")
-        print("*"*50)
-        print(dice.values)
-        print("*"*50)
         self.assertEqual(5, len(dice.values))
         for value in dice.values:
             self.assertTrue(value >= 1 and value <= 6, "value " + str(value) + " must be between 1 and 6")
